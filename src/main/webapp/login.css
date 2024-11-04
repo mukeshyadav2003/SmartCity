@@ -1,0 +1,92 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+en{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+}
+
+section {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.inputBox input:focus {
+    border-color: #007bff;
+}
+
+.inputBox i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #999;
+    transition: 0.3s;
+}
+
+.inputBox input:focus + i {
+    top: -10px;
+    left: 5px;
+    color: #007bff;
+    font-size: 12px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.inputBox input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.inputBox input[type="submit"]:hover {
+    background: #0056b3;
+}}
